@@ -11,3 +11,6 @@ do
         echo $1 | gpg --decrypt --batch --yes --passphrase-fd 0 --output .decrypted/$x $x
     )
 done
+
+chmod +x .decrypted/*.sh
+
